@@ -5,6 +5,7 @@ function App() {
     <div>
       <h1>Nielle &#127800;</h1>
       <span>Frontend Developer | UI/UX Designer</span>
+      <span>Hello</span>
     </div>
   );
 }
