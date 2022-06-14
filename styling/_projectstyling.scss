@@ -1,0 +1,38 @@
+@use "colors";
+
+.imrp {
+  .project-display {
+    background-image: url("/assets/screenshot_irmp.PNG");
+                      background-size: contain;
+                      background-color: white;
+                      background-repeat: no-repeat;
+                      background-position: center;
+    position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(8, 116, 116, 0.25);
+        background-color: linear-gradient(167deg, rgba(0,179,179, 0.25) 0%, rgba(9,75,75,0.25) 100%);
+        transition-duration: 0.3s;
+      }
+      &:hover:before {
+        background-color:rgba(8, 116, 116, 0.05);
+        transition-duration: 0.3s;
+      }
+      
+    .project-background {
+
+      h3 {
+        font-family: "Cabin", sans-serif;
+        font-size: 1.25em;  
+        color: rgb(255, 192, 203, 1);
+      }
+    }
+  }
+
+}

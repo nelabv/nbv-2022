@@ -1,0 +1,248 @@
+.imrp .project-display {
+  background-image: url("/assets/screenshot_irmp.PNG");
+  background-size: contain;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.imrp .project-display:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(8, 116, 116, 0.25);
+  background-color: linear-gradient(167deg, rgba(0, 179, 179, 0.25) 0%, rgba(9, 75, 75, 0.25) 100%);
+  transition-duration: 0.3s;
+}
+.imrp .project-display:hover:before {
+  background-color: rgba(8, 116, 116, 0.05);
+  transition-duration: 0.3s;
+}
+.imrp .project-display .project-background h3 {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.25em;
+  color: rgb(255, 192, 203);
+}
+
+* {
+  background-color: #FFFDF6;
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+img {
+  width: 5em;
+  height: 5em;
+}
+
+h1, h2, h3 {
+  font-family: "Amiri", serif;
+  color: #597d35;
+}
+
+h1 {
+  font-size: 1.953rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+nav {
+  background-color: #FFFDF6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0 1em;
+}
+nav div {
+  height: 100%;
+  max-width: 1500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo span {
+  color: #597d35;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85em;
+  height: 3em;
+  width: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.homepage--body {
+  max-width: 1500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 1em;
+  padding-top: 15em;
+}
+.homepage--body p {
+  font-size: 1.25em;
+  margin-bottom: 2em;
+}
+.homepage--body .img-container {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background-image: url("./assets/profile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 45%;
+  margin-bottom: 1em;
+}
+
+.tools-and-stack {
+  max-width: 1500px;
+  margin: auto;
+  padding: 4em 1em;
+}
+.tools-and-stack .tools-and-stack--container {
+  max-width: 1500px;
+  margin: auto;
+  padding-top: 2em;
+}
+.tools-and-stack .tools-and-stack--container h2 {
+  margin-bottom: 1em;
+}
+
+.stack-list h3 {
+  display: flex;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 1em;
+}
+.stack-list h3:after {
+  content: "";
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: #D8D0B6;
+}
+.stack-list .icon--container {
+  margin: 1em 0;
+}
+.stack-list .icon--container img {
+  max-height: 3em;
+  max-width: 3em;
+  margin-right: 0.25em;
+}
+
+.recent-works {
+  padding: 1em;
+  max-width: 1500px;
+  margin: auto;
+}
+.recent-works h2 {
+  margin-bottom: 1em;
+}
+
+.project {
+  border: 1px solid #D8D0B6;
+  max-width: 600px;
+}
+.project .project-display {
+  cursor: pointer;
+  height: 20em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+}
+.project .project-background {
+  padding: 0.5em;
+  background-color: white;
+}
+.project .project-actions {
+  display: none;
+}
+.project .project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.project .project-description p {
+  padding: 0 1em;
+  padding-bottom: 2em;
+}
+.project .project-description h3 {
+  background-color: inherit;
+  padding: 1em;
+}
+.project .project-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+.project .project-stack span {
+  font-size: 0.75em;
+  color: #597d35;
+  background-color: #D8D0B6;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  border-radius: 3em;
+}
+
+.project-actions-visible {
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.primary-btn, .secondary-btn {
+  background-color: #597d35;
+  border: none;
+  color: white;
+  font-size: 0.85em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.primary-btn:hover, .secondary-btn:hover {
+  background-color: #799a59;
+}
+
+.secondary-btn {
+  background-color: #948e7d;
+}
+.secondary-btn:hover {
+  background-color: #799a59;
+}
+
+/*# sourceMappingURL=styles.css.map */

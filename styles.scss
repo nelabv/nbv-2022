@@ -1,0 +1,245 @@
+@use "styling/colors";
+@use "styling/projectstyling";
+
+* {
+  background-color: colors.$cream;
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+img {
+  width: 5em;
+  height: 5em;
+}
+
+h1, h2, h3 {
+  font-family: "Amiri", serif;
+  color: colors.$pickleGreen;
+}
+
+h1 {
+  font-size: 1.953rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+nav {
+  background-color: colors.$cream;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0 1em;
+
+  div {
+    height: 100%;
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  span {
+    color: colors.$pickleGreen;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85em;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+.homepage--body {
+  max-width: 1500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 0 1em;
+  padding-top: 15em;
+
+  p {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+  }
+
+  .img-container {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background-image: url("./assets/profile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 45%;
+    margin-bottom: 1em;
+  }
+}
+
+.tools-and-stack {
+  max-width: 1500px;
+  margin: auto;
+  padding: 4em 1em;
+
+  .tools-and-stack--container {
+    max-width: 1500px;
+    margin: auto;
+    padding-top: 2em;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.stack-list {
+  h3 {
+    display: flex;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    font-size: 1em;
+
+    &:after {
+      content: '';
+      flex: 1;
+      margin-left: 1rem;
+      height: 1px;
+      background-color: colors.$gray;
+    }
+  }
+
+  .icon--container {
+    margin: 1em 0;
+
+    img {
+      max-height: 3em;
+      max-width: 3em;
+      margin-right: 0.25em;
+    }
+  }
+}
+
+.recent-works {
+  padding: 1em;
+  max-width: 1500px;
+  margin: auto;
+
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+
+.project {
+  border: 1px solid colors.$gray;
+  max-width: 600px;
+
+  .project-display {
+    cursor: pointer;
+    height: 20em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+  }
+
+  .project-background {
+    padding: 0.5em;
+    background-color: white;
+  }
+
+  .project-actions {
+    display: none;
+  }
+
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    p {
+      padding: 0 1em;
+      padding-bottom: 2em;
+    }
+
+    h3 {
+      background-color: inherit;
+      padding: 1em;
+    }
+  }
+
+  .project-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    margin-bottom: 1em;
+
+    span {
+      font-size: 0.75em;
+      color:  colors.$pickleGreen;
+      background-color: colors.$gray;
+      padding: 0.5em;
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+      border-radius: 3em;
+    }
+  }
+}
+
+.project-actions-visible {
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.primary-btn {
+  background-color: colors.$pickleGreen;
+  border: none;
+  color: white;
+  font-size: 0.85em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: colors.$lightPickleGreen;
+  }
+}
+
+.secondary-btn {
+  @extend .primary-btn;
+
+  background-color: colors.$darkGray;
+
+  &:hover {
+    background-color: colors.$lightPickleGreen;
+  }
+}

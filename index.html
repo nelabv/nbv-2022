@@ -3,79 +3,114 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Jost:wght@300&family=Cabin:wght@400;700&display=swap" rel="stylesheet">
   <title>Nielle Valdon | Frontend Developer & UI Designer</title>
 </head>
 <body>
   <nav>
-    <span>LOGO</span>
-
-    <button>Dark mode</button>
+    <div>
+      <div class="logo">
+            <span>NV</span>
+      </div>
+  
+<!--       <button>Dark mode</button> -->
+    </div>
   </nav>
 
 
-  <div>
-    <img src="./assets/profile.jpg" alt="Profile" />
+  <section class="homepage--body">
+    <div class="img-container">
+
+    </div>
     <h1>Hello there!</h1>
-    <p>I am Nielle, a frontend developer and UI designer in Manila, Philippines. I enjoy designing and tinkering stuff from scratch.</p>
-  </div>
+    <p>I am Nielle, a frontend developer and UI designer in Manila, &#127477;&#127469;. I enjoy designing and building stuff from scratch.</p>
+  </section>
 
 
-  <div>
-    <h2>My Tools & Stack</h2>
+  <section class="tools-and-stack">
+    <h2>Tools & Stack</h2>
+    <p>Here are the programming languages that I have used the most.</p>
 
-    <div>
-      <h3>Frontend Development</h3>
+    <div class="tools-and-stack--container">
+        
+            <div class="stack-list">
+              <h3>Frontend</h3>
+        
+              <div class="icon--container">
+                <img src="./assets/icon_html.png" alt="HTML" />
+                <img src="./assets/icon_css.png" alt="CSS" />
+                <img src="./assets/icon_sass.png" alt="Sass" />
+                <img src="./assets/icon_js.png" alt="JavaScript" />
+                <img src="./assets/icon_react.png" alt="ReactJS" />
+              </div>
+            </div>
 
-      <ul><li>HTML</li></ul>
-      <ul><li>CSS</li></ul>
-      <ul><li>Sass</li></ul>
-      <ul><li>JavaScript</li></ul>
-      <ul><li>ReactJS</li></ul>
+            <div class="stack-list">
+              <h3>Backend</h3>
+        
+              <div class="icon--container">
+                <img src="./assets/icon_node.png" alt="NodeJS" />
+                <img src="./assets/icon_express.png" alt="Express" />
+              </div>
+            </div>
+
+            <div class="stack-list">
+              <h3>Design Tools</h3>
+        
+              <div class="icon--container">
+                <img src="./assets/icon_photoshop.png" alt="Adobe Photoshop" />
+                <img src="./assets/icon_illustrator.png" alt="Adobe Illustrator" />
+                <img src="./assets/icon_figma.png" alt="Figma" />
+              </div>
+            </div>
     </div>
 
-    <div>
-      <h3>Backend Development</h3>
+  </section>
 
-      <ul><li>NodeJS</li></ul>
-      <ul><li>Express</li></ul>
-    </div>
 
-    <div>
-      <h3>Databases</h3>
-
-      <ul><li>MongoDB</li></ul>
-      <ul><li>Amazon S3 Bucket</li></ul>
-    </div>
-
-    <div>
-      <h3>Design Tools</h3>
-
-      <ul><li>Adobe Photoshop</li></ul>
-      <ul><li>Adobe Illustrator</li></ul>
-      <ul><li>Figma</li></ul>
-    </div>
-  </div>
-
-  <div>
+  <section class="recent-works">
     <h2>My Recent Works</h2>
 
-    <div>
-      <h3>Integrated Medical Records of the Philippines</h3>
+    <div class="project imrp">
+          <div class="project-display">
+                <div class="project-background">
+                </div>
 
-      <div>
-              <span>ReactJS</span>
-              <span>NodeJS</span>
-              <span>Express</span>
-              <span>MongoDB</span>
-              <span>Amazon S3 Bucket</span>
-      </div>
+                <div class="project-actions">
+                  <button>Visit Website</button>
+                  <button>View Repository</button>
+                </div>
+          </div>
 
-      <p>IMRP is a records system prototype that envisions a centralized medical files storage.</p>
+          <div class="project-description">
+                  <h3>Integrated Medical Records of the Philippines</h3>
+                  
+                  <div class="project-stack">
+                          <span>ReactJS</span>
+                          <span>NodeJS</span>
+                          <span>Express</span>
+                          <span>MongoDB</span>
+                          <span>Amazon S3 Bucket</span>
+                  </div>
+                
+                  <p>IMRP is a records system prototype that envisions a centralized medical files storage. It offers file sharing between patient and physician users, as well as generation of medical prescription for physician</p>
 
-      <button>Live</button>
-      <button>Github Repository</button>
+                  <div class="project-actions-visible">
+                    <button class="primary-btn">Visit Website</button>
+                    <button class="secondary-btn">View Repository</button>
+                  </div>
+          </div>
     </div>
-  </div>
+
+
+
+    
+  </section>
+
+ <!--  <div>
 
 
   <footer>
@@ -89,6 +124,6 @@
 
 
     <span>nielle valdon 2022</span>
-  </footer>
+  </footer> -->
 </body>
 </html>
