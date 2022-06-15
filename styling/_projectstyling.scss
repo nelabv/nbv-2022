@@ -34,5 +34,76 @@
       }
     }
   }
+}
 
+
+.reppit {
+  .project-display {
+    background-image: url("/assets/screenshot_reppit.PNG");
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: 50% 90%;
+    position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgb(198, 69, 92, 0.5);
+        background-color: linear-gradient(167deg, rgba(0,179,179, 0.25) 0%, rgba(9,75,75,0.25) 100%);
+        transition-duration: 0.3s;
+      }
+      &:hover:before {
+        background-color:rgba(8, 116, 116, 0.05);
+        transition-duration: 0.3s;
+      }
+      
+    .project-background {
+
+      h3 {
+        font-family: "Cabin", sans-serif;
+        font-size: 1.25em;  
+        color: rgb(255, 192, 203, 1);
+      }
+    }
+  }
+}
+
+
+.portfolio {
+  .project-display {
+    background-image: url("/assets/screenshot_portfolio.PNG");
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: 50% 90%;
+    position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(113, 157, 70, 0.5);
+        background-color: linear-gradient(167deg, rgba(0,179,179, 0.25) 0%, rgba(9,75,75,0.25) 100%);
+        transition-duration: 0.3s;
+      }
+      &:hover:before {
+        background-color: rgba(113, 157, 70, 0.05);
+        transition-duration: 0.3s;
+      }
+      
+    .project-background {
+
+      h3 {
+        font-family: "Cabin", sans-serif;
+        font-size: 1.25em;  
+        color: rgb(255, 192, 203, 1);
+      }
+    }
+  }
 }

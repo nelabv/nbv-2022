@@ -63,13 +63,14 @@ nav {
     color: colors.$pickleGreen;
     cursor: pointer;
     font-weight: 600;
-    font-size: 0.85em;
+    font-size: 1.25em;
     height: 3em;
     width: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    font-family: 'Charmonman', cursive;
   }
 }
 
@@ -143,6 +144,13 @@ nav {
   }
 }
 
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .recent-works {
   padding: 1em;
   max-width: 1500px;
@@ -155,7 +163,14 @@ nav {
 
 .project {
   border: 1px solid colors.$gray;
-  max-width: 600px;
+  max-width: 700px;
+  flex-grow: 1;
+  margin-bottom: 2em;
+  margin-right: 1em;
+
+  &:hover {
+    border: 1px solid colors.$darkGray;
+  }
 
   .project-display {
     cursor: pointer;
@@ -172,6 +187,7 @@ nav {
   .project-background {
     padding: 0.5em;
     background-color: white;
+    opacity: 0;
   }
 
   .project-actions {
@@ -183,15 +199,14 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    padding: 1em;
 
     p {
-      padding: 0 1em;
-      padding-bottom: 2em;
+      padding-bottom: 1em;
     }
 
     h3 {
       background-color: inherit;
-      padding: 1em;
     }
   }
 
@@ -201,7 +216,6 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-left: 1em;
     margin-bottom: 1em;
 
     span {
@@ -217,7 +231,6 @@ nav {
 }
 
 .project-actions-visible {
-  padding-left: 1em;
   padding-bottom: 1em;
 }
 
@@ -241,5 +254,95 @@ nav {
 
   &:hover {
     background-color: colors.$lightPickleGreen;
+  }
+}
+
+.text-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0.85em;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+      border-bottom: 1px solid colors.$pickleGreen;
+  }
+
+}
+
+footer {
+  max-width: 1500px;
+  margin: auto;
+  padding: 1em;
+  height: auto;
+
+  .footer-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 5em;
+    border-bottom: 1px solid colors.$gray;
+  }
+
+
+  .footer-icon {
+    cursor: pointer;
+    background-color: colors.$lightPickleGreen;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 1em;
+
+    &:hover {
+      background-color: #8fb16d;
+    }
+
+    img {
+      max-width: 1em;
+      max-height: auto;
+      height: auto;
+      background-color: transparent;
+    }
+  }
+
+  span {
+    font-family: 'Charmonman', cursive;
+  }
+}
+
+.footer-credits {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2em;
+
+  .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    span, img {
+      margin-right: 0.5em;
+    }
+
+    p {
+      display: block;
+      font-size: 0.85em;
+    }
+    
+    img {
+      max-width: 0.85em;
+      max-height: 0.85em;
+      height: auto;
+    }
   }
 }
