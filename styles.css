@@ -94,6 +94,16 @@
   font-size: 18px;
 }
 
+::-moz-selection {
+  color: #FFFDF6;
+  background: rgb(121, 154, 89);
+}
+
+::selection {
+  color: #FFFDF6;
+  background: rgb(121, 154, 89);
+}
+
 img {
   width: 5em;
   height: 5em;
@@ -117,7 +127,7 @@ h3 {
 }
 
 nav {
-  background-color: #FFFDF6;
+  background-color: rgb(248, 242, 220);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,6 +141,7 @@ nav {
 }
 nav div {
   height: 100%;
+  background-color: transparent;
   max-width: 1500px;
   width: 100%;
   display: flex;
@@ -148,7 +159,7 @@ nav div {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  background-color: transparent;
   font-family: "Charmonman", cursive;
 }
 
@@ -302,14 +313,14 @@ nav div {
   cursor: pointer;
 }
 .primary-btn:hover, .secondary-btn:hover {
-  background-color: #799a59;
+  background-color: rgb(121, 154, 89);
 }
 
 .secondary-btn {
   background-color: #948e7d;
 }
 .secondary-btn:hover {
-  background-color: #799a59;
+  background-color: rgb(121, 154, 89);
 }
 
 .text-btn {
@@ -340,7 +351,7 @@ footer .footer-icon-container {
 }
 footer .footer-icon {
   cursor: pointer;
-  background-color: #799a59;
+  background-color: rgb(121, 154, 89);
   height: 2em;
   width: 2em;
   display: flex;
@@ -388,6 +399,11 @@ footer span {
   max-width: 0.85em;
   max-height: 0.85em;
   height: auto;
+}
+
+.anchor {
+  text-decoration: none;
+  color: #666666;
 }
 
 /*# sourceMappingURL=styles.css.map */

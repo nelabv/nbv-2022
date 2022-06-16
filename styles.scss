@@ -12,6 +12,16 @@
   font-size: 18px;
 }
 
+::-moz-selection {
+  color: colors.$cream;
+  background: colors.$lightPickleGreen;
+}
+
+::selection {
+  color: colors.$cream;
+  background: colors.$lightPickleGreen;
+}
+
 img {
   width: 5em;
   height: 5em;
@@ -35,7 +45,7 @@ h3 {
 }
 
 nav {
-  background-color: colors.$cream;
+  background-color: colors.$cream2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +59,7 @@ nav {
 
   div {
     height: 100%;
+    background-color: transparent;
     max-width: 1500px;
     width: 100%;
     display: flex;
@@ -68,7 +79,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    background-color: transparent;
     font-family: 'Charmonman', cursive;
   }
 }
@@ -344,4 +355,9 @@ footer {
       height: auto;
     }
   }
+}
+
+.anchor {
+  text-decoration: none;
+  color: #666666;
 }
