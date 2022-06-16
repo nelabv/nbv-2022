@@ -251,6 +251,7 @@ nav {
   font-size: 0.85em;
   padding: 0.5em 1em;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background-color: colors.$lightPickleGreen;

@@ -6,4 +6,4 @@ document.addEventListener('scroll', function(e) {
   } else {
       nav.style.backgroundColor = "#FFFDF6";
   }   
-  });
+});

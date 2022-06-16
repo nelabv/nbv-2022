@@ -311,6 +311,7 @@ nav div {
   font-size: 0.85em;
   padding: 0.5em 1em;
   cursor: pointer;
+  text-decoration: none;
 }
 .primary-btn:hover, .secondary-btn:hover {
   background-color: rgb(121, 154, 89);
