@@ -59,7 +59,7 @@
   background-image: url("/assets/screenshot_portfolio.PNG");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 90%;
+  background-position: 15% 90%;
   position: relative;
 }
 .portfolio .project-display:before {
@@ -69,7 +69,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(113, 157, 70, 0.5);
+  background-color: rgba(211, 233, 190, 0.5);
   background-color: linear-gradient(167deg, rgba(0, 179, 179, 0.25) 0%, rgba(9, 75, 75, 0.25) 100%);
   transition-duration: 0.3s;
 }
@@ -282,6 +282,12 @@ nav div {
 .project .project-description h3 {
   background-color: inherit;
 }
+.project .project-description span {
+  margin-bottom: 1em;
+}
+.project .project-description span em {
+  font-size: 0.85em;
+}
 .project .project-stack {
   display: flex;
   flex-direction: row;
@@ -347,6 +353,7 @@ footer .footer-icon-container {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 1.25em;
   padding-bottom: 5em;
   border-bottom: 1px solid #D8D0B6;
 }
@@ -405,6 +412,22 @@ footer span {
 .anchor {
   text-decoration: none;
   color: #666666;
+}
+
+.text-link {
+  font-size: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #597d35;
+  color: #597d35;
+}
+.text-link:hover {
+  border-bottom: 1px solid #597d35;
+  transition-duration: 0.3s;
+  color: rgb(121, 154, 89);
+}
+
+.email span {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

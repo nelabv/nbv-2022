@@ -218,6 +218,13 @@ nav {
     h3 {
       background-color: inherit;
     }
+
+    span {
+      em {
+        font-size: 0.85em;
+      }
+      margin-bottom: 1em;
+    }
   }
 
   .project-stack {
@@ -293,6 +300,7 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 1.25em;
     padding-bottom: 5em;
     border-bottom: 1px solid colors.$gray;
   }
@@ -361,4 +369,23 @@ footer {
 .anchor {
   text-decoration: none;
   color: #666666;
+}
+
+.text-link {
+  font-size: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid colors.$pickleGreen;
+  color: colors.$pickleGreen;
+
+  &:hover {
+    border-bottom: 1px solid colors.$pickleGreen;
+    transition-duration: 0.3s;
+    color: colors.$lightPickleGreen;
+  }
+}
+
+.email {
+  span {
+    font-family: 'Times New Roman', Times, serif
+  }
 }
